@@ -51,7 +51,7 @@ const eyes = () => {
         const vectorLength = getVectorLength(vector);
         const i = vector.i / vectorLength;
         const j = vector.j / vectorLength;
-        return { i: i, j: j };
+        return { i, j };
     }
 
     function getVectorLength(vector) {
