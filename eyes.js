@@ -20,8 +20,8 @@ const eyes = () => {
         const vector = { i: vector_i, j: vector_j };
         // Unit vector gives vector thats length is always 1
         const unitVector = getUnitVector(vector);
-        // If vector length is less than eye size divided by two, scale is
-        // same as vector length otherwise it is same as eye size divided by two
+        // If vector length is less than eye radius, scale is
+        // same as vector length otherwise it is same as eye radius
         const scale =
             getVectorLength(vector) < EYE_SIZE / 2
                 ? -getVectorLength(vector)
